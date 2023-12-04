@@ -31,11 +31,11 @@ int main()
 		{
 		case 'a':
 		case 'A':
-			pin.call(0);
+			pin.call(0);//call to member function of pin for input, genration and output
 			break;
 		case 'b':
 		case 'B':
-			password.call();
+			password.call();//call to member function of pin for input, genration and output
 			break;
 		default:
 			cout << "\t\tINVALID CHOICE\n" << endl;
@@ -44,13 +44,12 @@ int main()
 		cout << "\n\tDo you Want to run Application Again(y/n)? ";//Prompt to run the program again
 		choice = _getch();
 		cout << choice << endl;
-			system("cls");
+			system("cls");//Clear screen for restart of application
 	} while (toupper(choice) == 'Y');
 	now = clock();
 	for (; clock() - now < (0.2 * CLOCKS_PER_SEC););//Time delay of 0.2s
 	cout << "\n\tApplication Ended Successfully"
 		<< "\n\tThank You!" << (char)2 << " For using our service\n\t";
-	system("pause");
-
+	system("pause");//Stops the console at the end of program
 	return 0;
 }
