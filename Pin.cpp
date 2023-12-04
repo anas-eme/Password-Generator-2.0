@@ -60,14 +60,20 @@ void Pin::call(unsigned short int a)
 			index++;
 	} while (toupper(choice) == 'Y');//Main Loop ends here
 	
-	if (index > -1)
+	if (index > -1)//Makes sure atleast one pin was generated
 	{
+		//Prompt to ask for showing generated pins during program execution
 		cout << "\n\tWant to know the generated pins(y/n)?  ";
 		choice = _getch();
 		cout << choice << endl;
-		if (toupper(choice) == 'Y')
+		//Condition to check whether user wants to know generated pins
+		if (toupper(choice) == 'Y')//If condition is true Print the generated pins
+		{
+			//Call to BubleSort Function if Pins are to be printed
+
 			for (int i = 0; i <= index; i++)
 				cout << i + 1 << ")" << pins[i] << endl;
+		}
 	}
 }
 Pin::~Pin()
