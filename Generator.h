@@ -74,6 +74,21 @@ string password_generator(unsigned short int length, bool lower_case, bool upper
 	delete[] password;	// Free the allocated memory
 	return generatedPassword;//Returns generated Password
 }
+//Function to check whether the first string is greater than the second so that in bubble sort 
+//Parameters are constant to ensure that the string value is not changed
+bool isNumericStringGreater(const string& a, const string& b)
+{
+	//condition to check whether the length of first element is equal to the second
+	//so return that the first is smaller than the second to return false
+	//this will skip the swap function as there is no need for swaping as both are equal in length
+	if (a.length() != b.length())
+	{
+		//if they are unequal true will be returned to execute swap function
+		return a.length() > b.length();
+	}
+	return a < b;//returns a false statement to skip execution of swap function
+}
+
 //Bubble sort Algorithm to sort the array of generated pins according to length
 //For example the 4-Digit pin will come first and then 5-Digit pin and likewise
 void bubbleSort(string arr[], int n)
@@ -90,18 +105,4 @@ void bubbleSort(string arr[], int n)
 			}
 		}
 	}
-}
-//Function to check whether the first string is greater than the second so that in bubble sort 
-//Parameters are constant to ensure that the string value is not changed
-bool isNumericStringGreater(const string& a, const string& b) 
-{
-	//condition to check whether the length of first element is equal to the second
-	//so return that the first is smaller than the second to return false
-	//this will skip the swap function as there is no need for swaping as both are equal in length
-	if (a.length() != b.length()) 
-	{
-		//if they are unequal true will be returned to execute swap function
-		return a.length() > b.length();
-	}
-	return a < b;//returns a false statement to skip execution of swap function
 }

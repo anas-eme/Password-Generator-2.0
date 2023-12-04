@@ -70,7 +70,7 @@ void Pin::call(unsigned short int a)
 		if (toupper(choice) == 'Y')//If condition is true Print the generated pins
 		{
 			//Call to BubleSort Function if Pins are to be printed
-
+			bubbleSort(pins, index + 1);
 			for (int i = 0; i <= index; i++)
 				cout << i + 1 << ")" << pins[i] << endl;
 		}
