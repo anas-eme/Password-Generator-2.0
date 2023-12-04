@@ -13,7 +13,7 @@ string pin_generator(unsigned short int length)
 	pin[length] = '\0';//Ensure the char memory is terminated properly
 	string generatedPin(pin); // Convert the char array to a string
 	delete[] pin; // Free the allocated memory
-	return generatedPin;
+	return generatedPin;//Returns Generated Pin
 }
 
 //Function to generate and store password in dynamic memory
@@ -69,8 +69,8 @@ string password_generator(unsigned short int length, bool lower_case, bool upper
 		} while (!ch_chosen);//checks whether one of the choice was made based on user prefrences
 		i++;
 	} while (i < length);//Loop ends after successful password generation
-	password[length] = '\0';//
-	string generatedPassword(password);
-	delete[] password;
-	return generatedPassword;
+	password[length] = '\0';///Ensure the char memory is terminated properly
+	string generatedPassword(password);// Convert the char array to a string
+	delete[] password;	// Free the allocated memory
+	return generatedPassword;//Returns generated Password
 }
