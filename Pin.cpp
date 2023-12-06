@@ -48,8 +48,8 @@ void Pin::call(unsigned short int a)
 		//break the loop if max pins are generated
 		if ((index + 2) > maximum)
 		{
-			cout << "\n\t\"Maximum Number of Pins were Generated!\"" << endl;
-			cout << "\t\"Therefor Pin Generation is Terminated!\"" << endl;
+			cout << "\n\t\"Maximum Number of Pins  were Generated!\"" << endl;
+			cout << "\t\"Therefore Pin Generation is Terminated!\"" << endl;
 			break;
 		}
 		//Below statement only works if there is capacity available for pin storage
@@ -100,5 +100,5 @@ void Pin::call(unsigned short int a)
 }
 Pin::~Pin()
 {
-	//cout << "Destructor is called" << endl;
+	//cout << "\nPin Destructor" << endl;
 }
