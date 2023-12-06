@@ -54,7 +54,7 @@ void Pin::call(unsigned short int a)
 		}
 		//Below statement only works if there is capacity available for pin storage
 		//prompt to ask if another pin is required
-		cout << "\n\tWant another Pin? ";
+		cout << "\n\tWant another Pin (y/n)? ";
 		choice = _getch();
 		cout << choice << endl;
 		//increment only if the next pin is to be generated

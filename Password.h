@@ -18,5 +18,7 @@ protected:
 public:
 	Password();//default constructor
 	void call(unsigned short int a);//main member function for working during password prompts
+	void quick_Generation();//member function for quick password generation
+	void adv_Generation();//member function for advanced password generation
 	~Password();//destructor
 };
