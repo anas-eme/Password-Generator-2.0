@@ -9,8 +9,9 @@ Password::Password()
 	length = 0;//Initialize to zero
 }
 //Defination of call() function
-void Password::call(unsigned short int a)
+void Password::call(unsigned short int a);
 {
+	index = a;
 }
 
 Password::~Password()

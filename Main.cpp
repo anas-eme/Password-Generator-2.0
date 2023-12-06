@@ -35,7 +35,7 @@ int main()
 			break;
 		case 'b':
 		case 'B':
-			password.call();//call to member function of pin for input, genration and output
+			password.call(0);//call to member function of pin for input, genration and output
 			break;
 		default:
 			cout << "\t\tINVALID CHOICE\n" << endl;
