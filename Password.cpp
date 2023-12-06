@@ -1,5 +1,5 @@
 #include "Password.h"
-//#include"Generator.h"
+#include"Generator.h"
 #include<iostream>
 #include<conio.h>
 using namespace std;
@@ -63,9 +63,9 @@ void Password::call(unsigned short int a)
 				cout << "\tPlease enter a value ( 8 to 32) inclusive: ";
 			}
 			//call to password_generator() to generate and store password
-			//passwords[index] = password_generator(length, true, true, true, true);
-			//cout << "\n\t\t\\Password = ";//Output generated password
-			//cout << "\"" << passwords[index] << "\"/" << endl;	
+			passwords[index] = password_generator(length, true, true, true, true);
+			cout << "\n\t\t\\Password = ";//Output generated password
+			cout << "\"" << passwords[index] << "\"/" << endl;	
 		}
 		break;
 		case 'b':
