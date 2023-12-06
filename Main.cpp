@@ -1,5 +1,5 @@
 #include<iostream>
-#include<cstdlib>//for sran()
+#include<cstdlib>//for srand()
 #include<ctime>//for time()
 #include<conio.h>//for getch()
 #include"Pin.h"
@@ -41,7 +41,7 @@ int main()
 			cout << "\t\tINVALID CHOICE\n" << endl;
 			break;
 		}
-		cout << "\n\tDo you Want to run Application Again(y/n)? ";//Prompt to run the program again
+		cout << "\n\tDo you Want to run Application Again (y/n)? ";//Prompt to run the program again
 		choice = _getch();
 		cout << choice << endl;
 			system("cls");//Clear screen for restart of application
