@@ -1,6 +1,6 @@
 #pragma once
 //Defination for maximum no of pins that can be generated during one execution and stored
-#define maximum 2
+#define maximum 10
 //Defination for minimum length of password
 #define min_length 8
 //Defination for maximum length of password

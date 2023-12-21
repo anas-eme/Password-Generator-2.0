@@ -1,10 +1,10 @@
 #pragma once
 //Defination for maximum no of pins that can be generated during one execution and stored
-#define maximum 2
+#define maximum 10
 //how many minimum digits are allowed
 #define min_digit 4
 //how many max digits are allowed
-#define max_digit 7
+#define max_digit 6
 #include<string>
 using namespace std;
 class Pin
