@@ -43,7 +43,7 @@ void Pin::call(unsigned short int a)
 
 		pins[index] = pin_generator(length);//calls the function to generate and store pin in member of Pin class
 		cout << "\n\t\t\\Pin = ";//Output generated pin
-		cout << "\"" << pins[index] << "\"/" << endl;
+		cout << "\"" << pins[index] << "\"/" << endl;//
 		//checks if the maximum capacity has been reached
 		//break the loop if max pins are generated
 		if ((index + 2) > maximum)
